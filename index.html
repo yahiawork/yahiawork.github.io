@@ -984,8 +984,7 @@
    <canvas id="binary-canvas"></canvas><section class="hero">
       <div class="card">
         <div class="kicker">HELLO WORLD</div>
-        <h1>......Designing high-impact experiences......
-      </h1>
+        <h1>I build modern, high-impact digital experiences.</h1>
         <p class="lead">Developer portfolio with a dynamic binary background, focused on performance, clean UI, and real-world projects.</p>
         <div class="cta">
           <button onclick="openGithub()" class="btn primary">View Projects</button>
@@ -1381,7 +1380,36 @@ window.addEventListener("scroll", () => {
 toTop.onclick = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
-
+/**
+ * AnimatedCreditsModal
+ * 
+ * @description A professional animated modal component for displaying credits
+ * with smooth entrance/exit animations, scrollable content, and customizable styling.
+ * 
+ * @constructor
+ * @param {Object} options - Configuration object
+ * @param {string} options.title - Modal title (e.g., "Credits")
+ * @param {Array<Object>} options.credits - Array of credit objects
+ * @param {string} options.credits[].name - Person's name
+ * @param {string} options.credits[].role - Their role/position
+ * @param {number} [options.duration=3000] - Animation duration in milliseconds
+ * @param {string} [options.theme='dark'] - Theme variant ('dark' or 'light')
+ * 
+ * @method open() - Display the modal with entrance animation
+ * @method close() - Close the modal with exit animation
+ * @method setCredits(creditsArray) - Update credits dynamically
+ * 
+ * @fires open - Emitted when modal opens
+ * @fires close - Emitted when modal closes
+ * 
+ * @example
+ * const modal = new AnimatedCreditsModal({
+ *   title: "Game Credits",
+ *   credits: [{name: "John Doe", role: "Developer"}],
+ *   duration: 3000
+ * });
+ * modal.open();
+ */
 </script>
 
 
